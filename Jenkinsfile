@@ -1,1 +1,9 @@
-echo "Hello World"
+pipeline
+agent any
+{
+  Stages{
+    Stage ("Build") {
+      echo "Hello World"
+    }
+  }
+}
